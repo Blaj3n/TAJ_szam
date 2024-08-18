@@ -6,4 +6,16 @@ taj_szam = int(input("Kérem a TAJ-számot: "))
 utolso_szamjegy = taj_szam % 10
 
 # Az utolsó számjegy kiíratása
+print(f"Az ellenőrzőszámjegy: {utolso_szamjegy} ")
+
+# CHATGPT: Szövegként tárolod a TAJ-számot, majd visszaalakítod számokká:
+# Ez az első megoldásodhoz hasonló, ahol a TAJ-számot stringként kezeled, és amikor szükséged van rá, számként használod:
+
+# Bekérjük a TAJ-számot szövegként
+taj_szam = input("Kérem a TAJ-számot: ")
+
+# Az utolsó számjegy kivétele és átalakítása számmá
+utolso_szamjegy = int(taj_szam[-1])
+
+# Az utolsó számjegy kiíratása
 print(f"Az ellenőrzőszámjegy: {utolso_szamjegy}")
