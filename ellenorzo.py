@@ -2,9 +2,10 @@
 # típusokon nem lehet indexelni, tehát nem kérheted le a TAJ-szám utolsó számjegyét úgy, ahogy egy string esetén tennéd
 taj_szam = input("Kérem a TAJ-számot: ")
 
-utolso_szamjegy = int(taj_szam[-1])  # A TAJ-szám utolsó karakterét egész számmá alakítom, hogy megtudjam, mi az utolsó számjegy (ellenőrzőszám).
+ellenorzoszam = int(taj_szam[-1])  # A TAJ-szám utolsó karakterét egész számmá alakítom, hogy megtudjam,
+# mi az utolsó számjegy (ellenőrzőszám).
 #123456789
-print(f"Az ellenőrzőszámjegy: {utolso_szamjegy}  ")
+print(f"Az ellenőrzőszámjegy: {ellenorzoszam}  ")
 
 osszeg = 0
 pozicio = 1  # Létrehozunk egy pozicio változót, ami az aktuális karakter pozícióját fogja tárolni. Kezdéskor ez 1 lesz,
@@ -20,3 +21,8 @@ for szam in taj_szam[:8]:  # Az első nyolc számjegyen végigmegyünk
     pozicio += 1
 
 print(f"A szorzatok összege: {osszeg} ")
+
+if osszeg % 10 == ellenorzoszam:
+    print("Helyes a szám!")
+else:
+    print("Hibás a szám!")
