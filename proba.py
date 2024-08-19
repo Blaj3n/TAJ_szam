@@ -19,3 +19,10 @@ utolso_szamjegy = int(taj_szam[-1])
 
 # Az utolsó számjegy kiíratása
 print(f"Az ellenőrzőszámjegy: {utolso_szamjegy}")
+
+"""
+tajszam = 673457015
+for szam in taj_szam[:8]: # nyolcadikig -> 0.-tól a 7.-ig, miután indexelünk, ezért a 0-tól számítva a 8.-ig megyünk, tehát a hetedikig.
+
+67345701
+"""

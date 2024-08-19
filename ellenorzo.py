@@ -5,7 +5,7 @@ taj_szam = input("Kérem a TAJ-számot: ")
 ellenorzoszam = int(taj_szam[-1])  # A TAJ-szám utolsó karakterét egész számmá alakítom, hogy megtudjam,
 # mi az utolsó számjegy (ellenőrzőszám).
 #123456789
-print(f"Az ellenőrzőszámjegy: {ellenorzoszam}  ")
+print(f"Az ellenőrzőszámjegy: {ellenorzoszam} ")
 
 osszeg = 0
 pozicio = 1  # Létrehozunk egy pozicio változót, ami az aktuális karakter pozícióját fogja tárolni. Kezdéskor ez 1 lesz,
